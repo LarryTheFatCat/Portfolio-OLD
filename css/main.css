@@ -75,6 +75,19 @@
   .btn:hover .btn-text {
     margin-right: 20px;
   }
+  
+  .banner-area {
+    background: url(../img/header-background.png) no-repeat center center/cover;
+    display: flex;
+    margin: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
 
   .banner-content {
     color: #fff;
@@ -93,16 +106,3 @@
       font-size: 40px;
     }
   }
-
-  #img {
-    width: 100%;
-    background-image: url("../img/AdolescentSmoggyBooby-size_restricted.gif");
-    height: 580px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    color: lightslategrey;
-    animation: rainbow 10s infinite;
-    animation-direction: alternate;
-
-}
