@@ -1,0 +1,56 @@
+.card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 400px;
+    max-height: 500px;
+    text-align: left;
+    background: rgb(114, 113, 119);
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.5s;
+  }
+  .card:hover {
+    border-color: #ff99ff;
+  }
+
+  .about-me {
+      max-width: 400px;
+      max-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .hobbies {
+      max-width: 400px;
+      max-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto; 
+      float: right; 
+      margin-bottom: 10px; 
+  }
+
+  .future {
+      max-width: 400px;
+      max-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      float: left;
+      margin-bottom: 10px;
+  }
+
+  html { 
+    background: url(imgs/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+  }
