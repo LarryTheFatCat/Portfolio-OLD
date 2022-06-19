@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Two's Portfolio!">
+    <meta name="description" content="Two's Public Portfolio">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/icon.png">
     <meta name="author" content="Two">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two's Portfolio</title>
     <div class="tab">
     </div>
     <img src="imgs/icon.png" alt="Avatar" class="img">
@@ -43,4 +42,30 @@
         </h4>
         </div>
 </body>
+
+<script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "Two's Portfolio";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = msg;
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+
 </html>
