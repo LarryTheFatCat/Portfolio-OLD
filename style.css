@@ -21,16 +21,37 @@ html {
 
 .one {
   color: white;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   max-height: 100px;
   max-width: 300px;
   margin: 0 auto;  
 }
 
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 .two {
   color: white;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Times New Roman", Times, serif;
   max-height: 500px;
   max-width: 400px;
   text-align: center;
@@ -38,7 +59,7 @@ html {
 
 .three {
   color: white;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Times New Roman", Times, serif;
   max-height: 500px;
   max-width: 5000px;
   text-align: center;
@@ -61,3 +82,6 @@ img {
 .img:hover {
   transform: scale(1.2) rotate(10deg);
 }
+
+
+
