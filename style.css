@@ -1,56 +1,50 @@
+html { 
+  background: url(imgs/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .card {
-    margin: 30px;
-    padding: 20px 40px 40px;
-    max-width: 400px;
-    max-height: 500px;
-    text-align: left;
-    background: rgb(114, 113, 119);
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
-    transition: all 0.5s;
-  }
-  .card:hover {
-    border-color: #ff99ff;
-  }
+  margin: 30px;
+  padding: 20px 40px 40px;
+  background: rgb(95, 94, 101);
+  border-bottom: 4px solid rgb(87, 7, 236);
+  border-radius: 6px;
+  transition: all 0.8s;
+}
+.card:hover {
+  border-color: #ff99ff;
+  float: center;
+}
 
-  .about-me {
-      max-width: 400px;
-      max-height: 500px;
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  .hobbies {
-      max-width: 400px;
-      max-height: 500px;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto; 
-      float: right; 
-      margin-bottom: 10px; 
-  }
+.one {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  max-height: 100px;
+  max-width: 300px;
+  margin: 0 auto;  
+}
 
-  .future {
-      max-width: 400px;
-      max-height: 500px;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      float: left;
-      margin-bottom: 10px;
-  }
+.two {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  max-height: 500px;
+  max-width: 400px;
+}
 
-  html { 
-    background: url(imgs/background.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
-  p {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    
-  }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  border-radius: 50%;
+  object-position: center;
+}
+
+.img:hover {
+  transform: scale(1.2) rotate(10deg);
+}
