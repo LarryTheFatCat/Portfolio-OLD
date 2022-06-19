@@ -13,6 +13,9 @@ html {
   border-bottom: 4px solid rgb(87, 7, 236);
   border-radius: 6px;
   transition: all 0.8s;
+  flex: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -84,5 +87,13 @@ img {
   transform: scale(1.2) rotate(10deg);
 }
 
-
-
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+}
