@@ -13,9 +13,6 @@ html {
   border-bottom: 4px solid rgb(87, 7, 236);
   border-radius: 6px;
   transition: all 0.8s;
-  flex: wrap;
-  display: flex;
-  flex-wrap: wrap;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -39,6 +36,9 @@ html {
   max-width: 400px;
   text-align: center;
   border: 3px solid green;
+  flex: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .three {
@@ -51,6 +51,9 @@ html {
   top: 338px;
   left: 1000px;
   border: 3px solid green;
+  flex: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -61,6 +64,9 @@ img {
   width: 10%;
   border-radius: 50%;
   object-position: center;
+  flex: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .img:hover {
@@ -69,7 +75,7 @@ img {
 
 @media screen and (min-width: 720px) {
   .flex {
-    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -ms-flexbox; 
     display: flex;
     max-width: 1200px;
     -ms-flex-pack: distribute;
@@ -82,9 +88,9 @@ img {
   overflow: hidden; 
   border-right: .15em solid orange; 
   margin: 0 auto; 
-  letter-spacing: .15em; 
+  letter-spacing: .20em; 
   animation: 
-    typing 5s steps(40, end),
+    typing 10s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
